@@ -1,0 +1,6 @@
+.roundedInput {
+  border-radius: 0.5rem;
+  border: 1px solid var(--light-gray);
+  padding-inline: 1rem;
+  height: 2rem;
+}

@@ -8,7 +8,7 @@ This assignment is for React, CSS, HTML, JS.
 
 - Fork the repo
 - read the codebase to understand the structure
-- check the final working version using this link -> [LINK]
+- check the final working version using this link -> [LINK](https://silly-bienenstitch-a221cc.netlify.app/)
 - create a PR containing your name
 
 ### Tasks:

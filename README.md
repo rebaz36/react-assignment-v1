@@ -31,7 +31,7 @@ This assignment is for React, CSS, HTML, JS.
 
 ### Deadline:
 
-- the PR must be created before 13 Feb 2023
+- the PR must be created before 15 Feb 2023
 - the faster the task is done the bonus points will be granted.
 
 ### Calculation of the Points:

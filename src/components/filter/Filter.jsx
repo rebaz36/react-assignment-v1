@@ -8,10 +8,16 @@ function Filter() {
   const [state, dispatch] = useContext(Context);
   const styles = {
     // FIX: write styles for the container to fix the design problems
-    marginTop: '4rem',
+    marginTop: '5rem',
     display: 'flex',
     justifyContent: 'space-between',
     alignItems: 'center',
+    width: '100%',
+    minHeight: '2rem',
+    height: 'auto',
+    rowGap: '1rem',
+    columnGap: '1rem',
+    flexWrap: 'wrap',
   };
   return (
     <Container style={styles}>

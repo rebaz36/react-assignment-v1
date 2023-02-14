@@ -1,5 +1,5 @@
-import React from "react";
-import classes from "./Modal.module.css";
+import React from 'react';
+import classes from './Modal.module.css';
 
 function Modal({ setIsModalOpen, children }) {
   window.closeModal = () => setIsModalOpen(false);

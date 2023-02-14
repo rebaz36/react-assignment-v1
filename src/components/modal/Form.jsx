@@ -21,7 +21,7 @@ function Form({ data }) {
         currency,
         description,
         id: data?.description ? data.id : state.data.length,
-        timestamp: new Date(dateTime).getTime(),
+        timestamp: new Date(dateTime),
       },
     });
     e.target.reset();
@@ -65,7 +65,6 @@ function Form({ data }) {
         required
         defaultValue={data?.timestamp && formatDateTime(data.timestamp)}
       />
-
       {data?.description && <input type="submit" value="Update" />}
       {!data?.description && <input type="submit" value="Add" />}
     </form>

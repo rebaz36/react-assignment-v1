@@ -37,14 +37,15 @@ select {
   padding-inline: 1rem;
 }
 
-input[type="submit"] {
+input[type='submit'] {
   cursor: pointer;
   background-color: var(--primary);
   border: none;
-  color: var(--light);
+  color: var(--primary-Text);
   margin-top: 1rem;
 }
 
-input[type="submit"]:hover {
+input[type='submit']:hover {
   background-color: var(--dark-gray);
+  color: var(--Primary-Text);
 }

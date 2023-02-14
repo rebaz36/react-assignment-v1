@@ -23,7 +23,7 @@ button {
   padding-inline: 1rem;
   padding-block: 0.5rem;
   background-color: var(--light);
-  color: var(--dark-gray);
+  color: var(--Secondary-Text);
   transition: all 0.3s;
   cursor: pointer;
 }

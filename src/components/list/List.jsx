@@ -42,6 +42,7 @@ export default function List() {
                   fontSize: '21px',
                   fontWeight: 500,
                   width: 'min-content',
+                  color: 'var(--black)',
                 }}
               >{`${item.currency}${item.amount}`}</div>
               <div>

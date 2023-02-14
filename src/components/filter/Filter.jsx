@@ -8,7 +8,7 @@ function Filter() {
   const [state, dispatch] = useContext(Context);
   const styles = {
     // FIX: write styles for the container to fix the design problems
-    marginTop: '6rem',
+    marginTop: '4rem',
     display: 'flex',
     justifyContent: 'space-between',
     alignItems: 'center',

@@ -44,6 +44,7 @@ function Form({ data }) {
         placeholder="Amount of Money"
         name="amount"
         step={0.01}
+        min={0}
         required
         defaultValue={data?.amount}
       />

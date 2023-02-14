@@ -1,5 +1,6 @@
 const updateItemById = (array, id, newDataObject) => {
-  // write the logic for finding and updating the object in the array using the id
+  const index = array.findIndex((item) => item.id === id);
+  array[index] = newDataObject;
   return array;
 };
 export default updateItemById;

@@ -25,6 +25,8 @@ function Filter() {
         />
       </div>
       <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
+        <span>Min: {state.min}</span>
+        <span>Max: {state.max}</span>
         <span>Total: {state.total}</span>
       </div>
     </Container>

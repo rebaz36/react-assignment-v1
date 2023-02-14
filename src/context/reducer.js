@@ -5,16 +5,19 @@ import {
   total,
   mapItemsToAmounts,
   updateItemById,
-} from "../utils";
-import { CREATE, REMOVE, SEARCH, UPDATE } from "./actions";
+} from '../utils';
+import { CREATE, REMOVE, SEARCH, UPDATE } from './actions';
 
 const reducer = (state, action) => {
   switch (action.type) {
     case CREATE: {
-
+      const newData = [...state.data, action.payload];
       return {
-        // FIX: create the logic to add the new item to the state
-        ...state
+        data: newData,
+        min: min(mapItemsToAmounts(newData)),
+        max: max(mapItemsToAmounts(newData)),
+        total: total(mapItemsToAmounts(newData)),
+        searchText: state.searchText,
       };
     }
 
@@ -22,7 +25,7 @@ const reducer = (state, action) => {
       const newData = updateItemById(
         [...state.data],
         action.payload.id,
-        action.payload
+        action.payload,
       );
 
       return {

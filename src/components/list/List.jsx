@@ -87,6 +87,13 @@ export default function List() {
         </div>
       )}
       {/* create a portal when modal is open and item is selected pass item data to the form of the modal */}
+      {isModalOpen &&
+        createPortal(
+          <Modal setIsModalOpen={setIsModalOpen}>
+            <Form data={selectedItem} />
+          </Modal>,
+          document.getElementById('modal'),
+        )}
     </Container>
   );
 }

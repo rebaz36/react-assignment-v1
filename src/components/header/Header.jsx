@@ -1,18 +1,19 @@
-import { useState } from "react";
-import { createPortal } from "react-dom";
-import Container from "../container/Container";
-import Form from "../modal/Form";
+import { useState } from 'react';
+import { createPortal } from 'react-dom';
+import Container from '../container/Container';
+import Form from '../modal/Form';
 
-import Modal from "../modal/Modal";
+import Modal from '../modal/Modal';
 
 function Header() {
   const styles = {
-    backgroundColor: "var(--primary)",
-    display: "flex",
-    justifyContent: "space-between",
-    color: "var(--light)",
-    alignItems: "center",
-    position: "fixed",
+    backgroundColor: 'var(--primary)',
+    display: 'flex',
+    justifyContent: 'space-between',
+    color: 'var(--light)',
+    alignItems: 'center',
+    position: 'fixed',
+    top: 0,
   };
   const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -25,7 +26,7 @@ function Header() {
           <Modal setIsModalOpen={setIsModalOpen}>
             <Form />
           </Modal>,
-          document.getElementById("modal")
+          document.getElementById('modal'),
         )}
     </Container>
   );

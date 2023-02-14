@@ -5,21 +5,36 @@ import Form from '../modal/Form';
 
 import Modal from '../modal/Modal';
 
-function Header() {
+function Header({ setDarkMode, darkMode }) {
   const styles = {
     backgroundColor: 'var(--primary)',
     display: 'flex',
     justifyContent: 'space-between',
-    color: 'var(--light)',
+    color: 'var(--white)',
     alignItems: 'center',
     position: 'fixed',
+  };
+
+  const buttonContainer = {
+    display: 'flex',
+    justifyContent: 'space-between',
+    width: '20%',
+  };
+
+  const handleTheme = () => {
+    setDarkMode(!darkMode);
   };
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
     <Container style={styles}>
       <h1>Cost Manager</h1>
-      <button onClick={() => setIsModalOpen(true)}>+ Add New</button>
+      <div style={buttonContainer}>
+        <button onClick={() => setIsModalOpen(true)}>+ Add New</button>
+        <button onClick={handleTheme}>
+          {darkMode ? 'Light Mode' : 'Dark Mode'}
+        </button>
+      </div>
       {isModalOpen &&
         createPortal(
           <Modal setIsModalOpen={setIsModalOpen}>

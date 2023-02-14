@@ -3,6 +3,20 @@
   --dark-gray: #3c4048;
   --light-gray: #b2b2b2;
   --light: #eaeaea;
+  --Primary-Text: #fff;
+  --Secondary-Text: #000;
+  --black: #000;
+  --white: #fff;
+}
+.dark {
+  --primary: #004d51;
+  --dark-gray: #eaeaea;
+  --light-gray: #b2b2b2;
+  --light: #3c4048;
+  --Primary-Text: #000;
+  --Secondary-Text: #fff;
+  --black: #000;
+  --white: #fff;
 }
 
 * {
@@ -13,4 +27,5 @@
 
 body {
   background: var(--light);
+  color: var(--Secondary-Text);
 }

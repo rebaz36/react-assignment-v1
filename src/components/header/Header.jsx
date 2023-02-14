@@ -13,6 +13,7 @@ function Header({ setDarkMode, darkMode }) {
     color: 'var(--white)',
     alignItems: 'center',
     position: 'fixed',
+    transition: 'background-color 1.5s ease-out, color 1.5s ease-in',
   };
 
   const buttonContainer = {

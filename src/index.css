@@ -28,4 +28,5 @@
 body {
   background: var(--light);
   color: var(--Secondary-Text);
+  transition: background-color 2s ease-out, color 2s ease-in;
 }

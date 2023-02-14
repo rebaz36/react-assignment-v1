@@ -13,7 +13,6 @@ function Header() {
     color: 'var(--light)',
     alignItems: 'center',
     position: 'fixed',
-    top: 0,
   };
   const [isModalOpen, setIsModalOpen] = useState(false);
 

@@ -19,7 +19,7 @@ function Header({ setDarkMode, darkMode }) {
   const buttonContainer = {
     display: 'flex',
     justifyContent: 'space-between',
-    width: '20%',
+    gap: '1rem',
   };
 
   const handleTheme = () => {

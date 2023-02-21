@@ -17,7 +17,7 @@ function Form({ data }) {
     dispatch({
       type: data?.description ? UPDATE : CREATE,
       payload: {
-        amount,
+        amount: parseFloat(amount),
         currency,
         description,
         id: data?.description ? data.id : state.data.length,

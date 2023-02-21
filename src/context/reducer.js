@@ -11,7 +11,7 @@ import { CREATE, REMOVE, SEARCH, UPDATE } from './actions';
 const reducer = (state, action) => {
   switch (action.type) {
     case CREATE: {
-      const newData = [...state.data, action.payload];
+      const newData = [action.payload, ...state.data];
       return {
         data: newData,
         min: min(mapItemsToAmounts(newData)),

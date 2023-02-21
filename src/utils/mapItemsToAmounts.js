@@ -23,8 +23,5 @@ OUTPUT:
 [10.52, 77.77]
 */
 
-const mapItemsToAmounts = (itemsArray) => {
-  const amounts = itemsArray.map((item) => item.amount);
-  return amounts;
-};
+const mapItemsToAmounts = (itemsArray) => itemsArray.map((item) => item.amount);
 export default mapItemsToAmounts;
